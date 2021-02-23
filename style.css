@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    max-width: 300px;
+    max-height: 500px;
+    flex-direction: column;
+  }
+  .card #drawer-image {
+    max-width: 300px;
+    max-height: 200px;
+    border-radius: 20px 20px 0 0;
+  }
+  .card .info {
+    max-width: 300px;
+  }
+  .card .info .text h3 {
+    font-size: 1rem;
+    margin: 15px;
+  }
+  .card .info .text p {
+    font-size: 0.8rem;
+    margin: 15px;
+  }
+  .card .info .credits {
+    margin: 15px;
+  }
+  .card .info .credits .person .person-avatar {
+    max-width: 35px;
+    max-height: 35px;
+  }
+  .card .info .credits .person .person-text {
+    font-size: 0.8rem;
+  }
+  .card .info .credits #share-icon {
+    margin-right: 15px;
+  }
+  .card .share {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 50px;
+    left: 200px;
+    bottom: 50px;
+    position: absolute;
+  }
+  .card .share .share-rectangle {
+    width: 100px;
+    height: 30px;
+    padding: 0px 20px 0px 20px;
+    background-color: #48556a;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card .share .share-rectangle #share-text {
+    color: white;
+    font-size: 0.6rem;
+  }
+  .card .share .share-rectangle img {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  .card .share .share-triangle {
+    width: 0px;
+    height: 0px;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    border-top: 1rem solid #48556a;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .card #drawer-image {
+    border-radius: 20px 0 0 20px;
+  }
+  .card .info .text h3 {
+    margin: 25px;
+  }
+  .card .info .text p {
+    margin: 25px;
+  }
+  .card .info .credits {
+    margin: 25px;
+    margin-right: 50px;
+  }
+  .card .share {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 80px;
+    left: 407px;
+    bottom: 50px;
+    position: absolute;
+  }
+  .card .share .share-rectangle {
+    width: 200px;
+    height: 70px;
+    padding: 0px 20px 0px 20px;
+    background-color: #48556a;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .card .share .share-rectangle #share-text {
+    color: white;
+    font-size: 1rem;
+  }
+  .card .share .share-rectangle img {
+    width: 1rem;
+    height: 1rem;
+  }
+  .card .share .share-triangle {
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #48556a;
+  }
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ecf2f8;
+  font-family: "Manrope", sans-serif;
+}
+body .card {
+  display: flex;
+  width: 1000px;
+  background-color: #FFF;
+  border-radius: 20px;
+}
+body .card #drawer-image {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  object-position: left;
+}
+body .card .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+}
+body .card .info .text h3 {
+  color: #48556a;
+}
+body .card .info .text p {
+  color: #6d7f97;
+}
+body .card .info .credits {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+body .card .info .credits .person {
+  display: flex;
+}
+body .card .info .credits .person .person-avatar {
+  width: 50px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+body .card .info .credits .person .person-text {
+  color: #48556a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .card .info .credits .person .person-text span {
+  font-weight: 700;
+}
+body .card .info .credits .person .person-text p {
+  color: #6d7f97;
+}
+body .card .info .credits #share-icon {
+  cursor: pointer;
+  background-color: #ecf2f8;
+  height: 15px;
+  width: 15px;
+  padding: 10px;
+  border-radius: 25px;
+}
+body .card .info .credits #share-icon:hover {
+  background-color: #48556a;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,221 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    max-width: 300px;
+    max-height: 500px;
+    flex-direction: column;
+    #drawer-image {
+      max-width: 300px;
+      max-height: 200px;
+      border-radius: 20px 20px 0 0;
+    }
+    .info {
+      max-width: 300px;
+      .text {
+        h3 {
+          font-size: 1rem;
+          margin: 15px;
+        }
+        p {
+          font-size: 0.8rem;
+          margin: 15px;
+        }
+      }
+      .credits {
+        margin: 15px;
+        .person {
+          .person-avatar {
+            max-width: 35px;
+            max-height: 35px;
+          }
+          .person-text {
+            font-size: 0.8rem;
+          }
+        }
+        #share-icon {
+          margin-right: 15px;
+        }
+      }
+    }
+    .share {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 70px;
+      height: 50px;
+      left: 200px;
+      bottom: 50px;
+      position: absolute;
+
+      .share-rectangle {
+        width: 100px;
+        height: 30px;
+        padding: 0px 20px 0px 20px;
+        background-color: hsl(217, 19%, 35%);
+        border-radius: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        #share-text {
+          color: white;
+          font-size: 0.6rem;
+        }
+        img {
+          width: 0.5rem;
+          height: 0.5rem;
+        }
+      }
+      .share-triangle {
+        width: 0px;
+        height: 0px;
+        border-left: 1rem solid transparent;
+        border-right: 1rem solid transparent;
+        border-top: 1rem solid hsl(217, 19%, 35%);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .card {
+    #drawer-image {
+      border-radius: 20px 0 0 20px;
+    }
+    .info {
+      .text {
+        h3 {
+          margin: 25px;
+        }
+        p {
+          margin: 25px;
+        }
+      }
+      .credits {
+        margin: 25px;
+        margin-right: 50px;
+      }
+    }
+    .share {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 80px;
+      left: 407px;
+      bottom: 50px;
+      position: absolute;
+
+      .share-rectangle {
+        width: 200px;
+        height: 70px;
+        padding: 0px 20px 0px 20px;
+        background-color: hsl(217, 19%, 35%);
+        border-radius: 25px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        #share-text {
+          color: white;
+          font-size: 1rem;
+        }
+        img {
+          width: 1rem;
+          height: 1rem;
+        }
+      }
+      .share-triangle {
+        width: 0px;
+        height: 0px;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid hsl(217, 19%, 35%);
+      }
+    }
+  }
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(210, 46%, 95%);
+  font-family: 'Manrope', sans-serif;
+  .card {
+    display: flex;
+    width: 1000px;
+    background-color: #FFF;
+    border-radius: 20px;
+
+    #drawer-image {
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+      object-position: left;
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 600px;
+      .text {
+        h3 {
+          color: hsl(217, 19%, 35%);
+        }
+        p {
+          color: hsl(214, 17%, 51%);
+        }
+      }
+      .credits {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        align-items: center;
+        .person {
+          display: flex;
+          .person-avatar {
+            width: 50px;
+            border-radius: 25px;
+            margin-right: 10px;
+          }
+          .person-text {
+            color: hsl(217, 19%, 35%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            span {
+              font-weight: 700;
+            }
+            p {
+              color: hsl(214, 17%, 51%);
+            }
+          }
+        }
+        #share-icon {
+          cursor: pointer;
+          background-color: hsl(210, 46%, 95%);
+          height: 15px;
+          width: 15px;
+          padding: 10px;
+          border-radius: 25px;
+          &:hover {
+            background-color: hsl(217, 19%, 35%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+}
+
